@@ -17,6 +17,9 @@ on:
 jobs:
   generate-youtube-video:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
 
     steps:
       - name: Checkout repository
